@@ -1,0 +1,34 @@
+/* 
+    Created on : 24 may. 2022, 19:27:53
+    Author     : xLyonCR
+
+en css se llaman reglas, al con junto de atributos a utilizar.
+Unidades de medidas: Vh(1/100), px, cm, %= relativo al tamano del elemento padre
+padding: crea un espacio entre companetes
+box sizing: ancho = ancho + border+ padding
+display: como se muestra, o el comportamiento, un bloque de nivel 
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    
+       
+}
+.navbar{
+    
+}
+.content{
+    
+}
+
