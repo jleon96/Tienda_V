@@ -7,6 +7,7 @@ Unidades de medidas: Vh(1/100), px, cm, %= relativo al tamano del elemento padre
 padding: crea un espacio entre companetes
 box sizing: ancho = ancho + border+ padding
 display: como se muestra, o el comportamiento, un bloque de nivel 
+el * es un selector universal
 */
 *{
     margin: 0;
@@ -22,13 +23,69 @@ display: como se muestra, o el comportamiento, un bloque de nivel
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
-    
-       
+
+
 }
 .navbar{
-    
-}
-.content{
-    
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
 }
 
+.logo{
+    width: 160px;
+    cursor: pointer;
+
+}
+
+nav{
+
+    flex: 1;
+    padding-left: 60px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.fondo{
+    background-color: lightslategray;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    text-decoration:  none;
+    color: darkorchid;
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: darkorange;
+
+}
+
+
+
+.feature-image{
+    height: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 160px;
+
+}
+
+.content p{
+    text-align: left;
+}
