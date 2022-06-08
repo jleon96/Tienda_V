@@ -89,3 +89,13 @@ nav ul li a {
 .content p{
     text-align: left;
 }
+
+
+.banner{
+	margin-top:10px;
+	height:400px;
+	background-image:url("img/perro-gato.webp");
+	background-size:cover;
+	padding:0px 0px 0px 0px;
+	border-radius:20px 20px 20px 20px;
+}
