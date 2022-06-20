@@ -1,10 +1,3 @@
-/**
- *
- * @author lyonc
- *
- *
- * Esta pagina me mapea la tabla personas
- */
 package com.tienda.entity;
 
 import java.io.Serializable;
@@ -31,7 +24,7 @@ public class personas implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "paises_id")
-    private pais paises;
+    public pais paises;
 
     public long getId() {
         return id;

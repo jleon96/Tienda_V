@@ -1,13 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.tienda.service;
 
+import com.tienda.entity.pais;
+
+import java.util.List;
 /**
  *
  * @author lyonc
  */
-public class IPaisesService {
+public interface IPaisesService {
     
+
+
+    public List<pais> listCountry();
 }
+
+   /*  public List<pais> getAllPais();
+
+    public pais getPaisById(Long id);
+
+   public personas FindByNombre(String nombre);
+
+    public void savePais(pais pais);
+
+    public void delete(long id);*/

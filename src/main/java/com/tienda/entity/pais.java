@@ -15,10 +15,13 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "paises")
 public class pais implements Serializable {
+    
+    
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private long id;
-    private String nombre;
+    private String pais;
 
     public long getId() {
         return id;
@@ -28,12 +31,12 @@ public class pais implements Serializable {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getPais() {
+        return pais;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setPais(String pais) {
+        this.pais = pais;
     }
     
     
