@@ -7,7 +7,16 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- comment -->
 </head>
-<body>
+
+
+
+<body style="background: rgb(34,193,195);
+      background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(184,45,253,1) 100%);">
+
+
+
+    <a class="btn btn-primary" th:href="@{/personasN/}" role="button">Crear Nueva Persona</a>
+
 
     <table class="table table-dark table-striped">
 
@@ -32,12 +41,18 @@
                 <td th:text="${user.getEmail}"></td>
                 <td th:text="${user.getTelefono}"></td>
                 <td th:text="${user.getPais.getPais}"></td>
+
+
                 <td>
                     <a th:href="@{/editPersona/{id}(id=${user.getId})}">Edit</a>
                 </td>
+
+
+
                 <td>
-                    <a th:href="@{/delete/{id}(id=${user.getId})}">Delete</a>
+                    <a th:href="@{/deletePersona/{id}(id=${user.getId})}">Delete</a>
                 </td>
+
             </tr>
         </th:block>
     </tbody>
