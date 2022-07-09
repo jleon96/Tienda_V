@@ -12,10 +12,6 @@ public class PaisesService implements IPaisesService {
     @Autowired
     private PaisRepository paisRepository;
 
-    /**
-     *
-     * @return
-     */
     @Override
     public List<pais> listCountry() {
        return (List<pais>)paisRepository.findAll();
