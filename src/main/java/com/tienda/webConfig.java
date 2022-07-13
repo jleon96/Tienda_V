@@ -19,7 +19,7 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 @Configuration
 public class webConfig implements WebMvcConfigurer {
 
-    @Bean
+    @Bean   /*el bean nos dice que lo que sigue es una configuracion*/
     public SessionLocaleResolver localeResolver() {
         /*Se guarda el obsejo locale en SessionLocaleResolver*/
         var slr = new SessionLocaleResolver();
