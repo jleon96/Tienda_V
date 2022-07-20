@@ -18,4 +18,6 @@ public interface IPersonaService {
     public void savePersona(personas personas);
 
     public void delete(long id);
+    
+    public personas findByNombre(String nombre);
 }

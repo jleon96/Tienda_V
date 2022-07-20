@@ -1,6 +1,9 @@
 package com.tienda.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,6 +24,13 @@ public class personas implements Serializable {
     private String apellido2;
     private String telefono;
     private String email;
+    
+    private String password;
+    private int active;
+    private String roles = "";
+    private String permisos = "";
+    
+    
 
     @ManyToOne
     @JoinColumn(name = "paises_id")
@@ -82,4 +92,51 @@ public class personas implements Serializable {
         this.paises = paises;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getActive() {
+        return active;
+    }
+
+    public void setActive(int active) {
+        this.active = active;
+    }
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }
+
+    public String getPermisos() {
+        return permisos;
+    }
+
+    public void setPermisos(String permisos) {
+        this.permisos = permisos;
+    }
+
+    public List <String> getRoleList(){
+        if(this.roles.length()>0){
+            return Arrays.asList(this.roles.split(","));
+        }
+        return new ArrayList<>();
+    }
+    
+        public List <String> getPermissionList(){
+        if(this.permisos.length()>0){
+            return Arrays.asList(this.permisos.split(","));
+        }
+        return new ArrayList<>();
+    }
+    
+    
 }
