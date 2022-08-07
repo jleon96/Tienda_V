@@ -26,9 +26,9 @@ public class personas implements Serializable {
     private String email;
     
     private String password;
-    private int active;
-    private String roles = "";
-    private String permisos = "";
+    private int active = 1;
+    private String roles = "admin";
+    private String permisos = "admin";
     
     
 

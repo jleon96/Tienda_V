@@ -12,8 +12,9 @@
         <header th:replace="plantilla/template::header"></header><!-- comment -->
 
 
+
+        <!--  Inicio formulario -->
         <div class="container">
-            <!--  Inicio formulario -->
             <form th:object="${personas}"
                   th:action="@{/save}"
                   method="POST"
@@ -79,6 +80,8 @@
                         </select>
                     </div>
                 </div>
+                
+                
                 <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
             </form><!--  fin formulario -->
 

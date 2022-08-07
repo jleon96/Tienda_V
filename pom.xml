@@ -88,6 +88,12 @@
             <version>2.6.2</version>
             <type>module</type>
         </dependency>
+        <dependency> 
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>6.17.0</version>
+        </dependency>
+        
     </dependencies>
 
     <build>
